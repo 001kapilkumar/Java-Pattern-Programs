@@ -1,0 +1,22 @@
+public class Pattern_2 {
+    public static void main(String [] args){
+        int row = 4 ;
+        int n = 0 ;
+        int n1 = 8 ;
+        for(int i = 0; i<row ; i++){
+            for(int j = 0; j<9 ;j++){
+                if(j == 9/2 || j == n || j == n1 ){
+                    System.out.print("*") ;
+
+                }
+                else {
+                    System.out.print(0);
+                }
+            }
+            n++ ;
+            n1-- ;
+            System.out.println() ;
+        }
+        System.out.println("Mid of 9/2 be " + 9/2) ;
+    }
+}

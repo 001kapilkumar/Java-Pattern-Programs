@@ -1,0 +1,28 @@
+import java.util.*;
+public class Spiral_Pattern {
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in) ;
+        System.out.println("Enter row you want to print for pattern") ;
+        int row = sc.nextInt();
+        int m = 1;
+
+      for(int i = 0; i<row ; i++){
+         int  n= row ;
+          for(int j = 0; j<row ; j++){
+              if( j == (row - m )){
+
+                  System.out.print("*");
+                  m++ ;
+                  n-- ;
+              }
+              else {
+                  System.out.print(n);
+                  n--;
+              }
+
+          }
+          System.out.println() ;
+
+      }
+    }
+}

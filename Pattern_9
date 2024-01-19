@@ -1,0 +1,15 @@
+public class Pattern_9 {
+    public static void main(String [] args){
+        int c = 65 ;
+        int row = 5 ;
+
+        for(int i = 1 ; i<=row ; i++){
+            for(int j = 0 ; j<i ; j++){
+                System.out.print((char)c + " ");
+
+            }
+            c++ ;
+            System.out.println() ;
+        }
+    }
+}

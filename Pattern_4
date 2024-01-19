@@ -1,0 +1,38 @@
+public class Pattern_4 {
+    public static void main(String [] args){
+        int row = 4;
+        int n = 0 ;
+        int m = 6 ;
+       for(int i = 0; i<row ; i++){
+           for(int j = 0 ; j<2*row-1 ; j++){
+               if(j == n || j == m ){
+                   System.out.print(i+1) ;
+               }
+               else{
+                   System.out.print(" ") ;
+               }
+
+           }
+           n++;
+           m-- ;
+           System.out.println();
+       }
+         row = 3;
+        n = 2 ;
+        m = 4 ;
+        for(int i = row; i>0 ; i--) {
+            for (int j = 0; j <9; j++) {
+                if (j == n || j == m) {
+                    System.out.print(i);
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+            n-- ;
+            m++;
+
+        }
+    }
+}
